@@ -1,5 +1,13 @@
 # VietGrid Updates
 
+## Tải bản thử VietGrid
+
+**[Mở trang Release và danh sách Assets](https://github.com/thangnguyenquoc2776/vietgrid-updates/releases/tag/office-4247e6406da8f35a00e286e2c4c17984223d26668d7c7f3d4e0ad70a884f60cd)** · **[Tải gói cập nhật VietGrid-native-1.zip](https://github.com/thangnguyenquoc2776/vietgrid-updates/releases/download/office-4247e6406da8f35a00e286e2c4c17984223d26668d7c7f3d4e0ad70a884f60cd/VietGrid-native-1.zip)**
+
+Bản Preview cho **OneNote 16.0.20527.20196, Windows x64**. Đây là gói cập nhật native dành cho bản VietGrid đã cài phù hợp; chưa phải bộ cài đầy đủ cho máy mới. Trong trang Release, mở **Assets** để xem ZIP, metadata đã ký, khóa public và thông báo bản quyền (5 tệp đính kèm). Tab Code hiện chỉ có README; tệp phát hành được lưu trong Releases.
+
+---
+
 Signed native compatibility updates for OneNote desktop on Windows x64.
 
 The automatic updater was deployed and tested on one machine on 2026-11-15: public GitHub download, pinned RSA-3072/SHA-256 signature, asset hashes, backup, same-payload installation and normal OneNote reopening. The user confirmed grid auto-start, no cleaning-up dialog and normal data/sync.
