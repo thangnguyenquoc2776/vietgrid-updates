@@ -12,7 +12,7 @@ Signed native compatibility updates for OneNote desktop on Windows x64.
 
 The automatic updater was deployed and tested on one machine on 2026-11-15: public GitHub download, pinned RSA-3072/SHA-256 signature, asset hashes, backup, same-payload installation and normal OneNote reopening. The user confirmed grid auto-start, no cleaning-up dialog and normal data/sync.
 
-The installed task checks at logon and every five minutes. It applies a compatible signed package only when OneNote and owned helpers are closed. It never forces OneNote to close. Runtime policy and sandbox binding remain local to each machine.
+As of 2026-11-16, the five-minute timer has been removed. A native watcher checks the Office fingerprint once at logon and then waits for Windows file-change notifications for onmain.DLL; it invokes the updater only for a build mismatch. If no compatible release is available, it does not poll GitHub periodically. It applies a compatible signed package only when OneNote and owned helpers are closed. It never forces OneNote to close. Runtime policy and sandbox binding remain local to each machine.
 
 Each release tag is office-<onmain.DLL SHA-256>. Assets are release.json, release.sig, the ZIP, the public signing key and third-party notices. Existing clients keep their pinned key; they do not trust a replacement key downloaded from the feed.
 
